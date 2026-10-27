@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SPREADER A81705</title>
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#e9ecef;--surface-1:#f3f4f6;--surface-2:#ffffff;
+  --border:#d9dde2;--border-strong:#b9bfc7;--border-stronger:#9aa2ab;--border-danger:#e29b95;--border-accent:#3a73c9;
+  --text-primary:#1a1d21;--text-secondary:#5a626c;--text-muted:#76808a;
+  --bg-success:#e1f1d4;--text-success:#2d5a12;--fill-success:#3b8520;--on-success:#ffffff;
+  --bg-danger:#fbe3e1;--text-danger:#8f1d17;--fill-danger:#c9372c;--on-danger:#ffffff;
+  --radius:8px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#101316;--surface-1:#272c33;--surface-2:#1e2227;
+    --border:#343a42;--border-strong:#4a525c;--border-stronger:#5d6773;--border-danger:#8f3a34;--border-accent:#6aa1f0;
+    --text-primary:#eceff2;--text-secondary:#9aa3ad;--text-muted:#7b858f;
+    --bg-success:#20361a;--text-success:#9fd67e;--fill-success:#3b8520;--on-success:#ffffff;
+    --bg-danger:#3d1a18;--text-danger:#f5a39d;--fill-danger:#d8453a;--on-danger:#ffffff;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101316;--surface-1:#272c33;--surface-2:#1e2227;
+  --border:#343a42;--border-strong:#4a525c;--border-stronger:#5d6773;--border-danger:#8f3a34;--border-accent:#6aa1f0;
+  --text-primary:#eceff2;--text-secondary:#9aa3ad;--text-muted:#7b858f;
+  --bg-success:#20361a;--text-success:#9fd67e;--fill-success:#3b8520;--on-success:#ffffff;
+  --bg-danger:#3d1a18;--text-danger:#f5a39d;--fill-danger:#d8453a;--on-danger:#ffffff;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text-primary);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;line-height:1.4}
+.wrap{max-width:480px;margin:0 auto;padding:12px}
+.p{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px;margin:0 0 10px}
+.h{font-size:12px;color:var(--text-secondary);margin:0 0 8px;font-weight:600}
+.pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:var(--radius);background:var(--surface-1);color:var(--text-secondary);margin:2px 2px 2px 0}
+.on{background:var(--bg-success);color:var(--text-success)}
+.bad{background:var(--bg-danger);color:var(--text-danger)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;padding:6px 0;border-top:1px solid var(--border)}
+.sd{font-size:12px;font-weight:600;color:var(--text-secondary);padding:8px 0 2px;border-top:1px solid var(--border)}
+.cnt{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);padding:8px;text-align:center}
+.cnt b{display:block;font-size:22px;font-weight:600}
+.cnt span{font-size:12px;color:var(--text-secondary)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 10px}
+.demo{border:1px dashed var(--border-strong);border-radius:12px;padding:8px 10px;margin:0 0 10px}
+.demo small{font-size:12px;color:var(--text-muted)}
+.seg{display:flex;gap:6px;margin:6px 0 0}
+.seg button{flex:1;font:inherit;font-size:13px;padding:6px;border:1px solid var(--border);background:var(--surface-2);color:var(--text-primary);border-radius:var(--radius);cursor:pointer}
+.seg button:focus-visible{outline:2px solid var(--border-accent);outline-offset:2px}
+.seg button[aria-pressed="true"]{border-color:var(--border-accent);box-shadow:inset 0 0 0 1px var(--border-accent)}
+svg{display:block;width:100%;height:auto}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<div class="demo">
+<small>Aperçu de démonstration : données simulées, absent de la vraie page</small>
+<div class="seg" role="group" aria-label="Simulation">
+<button id="s0" type="button" aria-pressed="true" onclick="setSc(0)">Normal</button>
+<button id="s1" type="button" aria-pressed="false" onclick="setSc(1)">Défaut coin 3</button>
+</div>
+</div>
+
+<div class="p">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<div>
+<div style="font-size:18px;font-weight:700">SPREADER A81705</div>
+<div style="font-size:12px;color:var(--text-secondary)">Sur RTG 12 · 27/10/2026 14:32:08</div>
+</div>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="width:22px;height:22px;stroke:var(--text-success);stroke-width:2;stroke-linecap:round" aria-label="WiFi connecté" role="img"><path d="M2 9a15 15 0 0 1 20 0"/><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1" style="fill:var(--text-success)"/></svg>
+</div>
+<div id="stat" role="status" style="margin-top:8px;font-size:13px;font-weight:600;padding:6px 10px;border-radius:var(--radius)"></div>
+</div>
+
+<div class="grid3">
+<div class="cnt" id="c1"><b></b><span>Locked</span></div>
+<div class="cnt" id="c2"><b></b><span>Unlocked</span></div>
+<div class="cnt" id="c3"><b></b><span>Landed</span></div>
+</div>
+
+<div class="p" style="padding:10px 6px">
+<p class="h" style="padding:0 8px">Vue de dessus, 20 capteurs</p>
+<svg id="sv" viewBox="0 0 380 236" role="img" aria-label="Vue de dessus du spreader avec tous les capteurs"></svg>
+<div style="font-size:12px;color:var(--text-secondary);padding:6px 8px 0">
+L = locked &nbsp; U = unlocked &nbsp; Ld = landed &nbsp; <span style="color:var(--fill-success)">●</span> actif &nbsp; <span style="color:var(--fill-danger)">●</span> défaut
+</div>
+</div>
+
+<div class="p">
+<p class="h">Disjoncteurs</p>
+<span class="pill on">QM1 OK</span><span class="pill on">QM2 OK</span><span class="pill on">QM3 OK</span>
+</div>
+
+<div class="p">
+<p class="h">Signaux envoyés au RTG</p>
+<div id="sig"></div>
+</div>
+
+<div class="p">
+<p class="h">Entrées</p>
+<div id="inp"></div>
+</div>
+
+<div class="p">
+<p class="h">Événements</p>
+<div id="ev"></div>
+</div>
+
+</main>
+<script>
+var sc=0;
+var D=[
+{lock:[1,1,1,1],unl:[0,0,0,0],ld:[1,1,1,1],m:[1,0,1,0],sz:[0,1,1,0],sig:[1,0,1,1,0,0,1],ok:1},
+{lock:[1,1,0,1],unl:[0,0,0,0],ld:[1,1,0,1],m:[1,0,1,0],sz:[0,1,1,0],sig:[0,0,0,1,0,0,1],ok:0}];
+var sg=['Locked','Unlocked','All landed','Single landed','20ft','45ft','Connected'];
+function sd(c){return c<=2?'Frontside':'Cabside'}
+function sum(a){return a.reduce(function(x,y){return x+y},0)}
+function pill(t,v,bad){return '<span class="pill '+(v?'on':(bad?'bad':''))+'">'+t+'</span>'}
+function dot(x,y,v,bad,l){
+  var f=v?'var(--fill-success)':(bad?'var(--fill-danger)':'var(--surface-2)');
+  var s=(v||bad)?'none':'var(--border-stronger)';
+  var t=v?'var(--on-success)':(bad?'var(--on-danger)':'var(--text-secondary)');
+  return '<circle cx="'+x+'" cy="'+y+'" r="11" style="fill:'+f+';stroke:'+s+'"/><text x="'+x+'" y="'+(y+4)+'" text-anchor="middle" font-size="11" font-weight="600" style="fill:'+t+'">'+l+'</text>';
+}
+function lab(x,y,t,v){
+  return '<text x="'+x+'" y="'+y+'" text-anchor="middle" font-size="12" font-weight="'+(v?700:400)+'" style="fill:'+(v?'var(--text-success)':'var(--text-secondary)')+'">'+t+'</text>';
+}
+function draw(d){
+  var OS='#EF9F27',g='';
+  g+='<text x="190" y="12" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--text-primary)">Frontside</text>';
+  g+='<text x="190" y="231" text-anchor="middle" font-size="12" font-weight="600" style="fill:var(--text-primary)">Cabside</text>';
+  g+='<rect x="10" y="20" width="40" height="190" rx="14" style="fill:none;stroke:'+OS+';stroke-width:5"/><rect x="330" y="20" width="40" height="190" rx="14" style="fill:none;stroke:'+OS+';stroke-width:5"/>';
+  g+='<line x1="50" y1="80" x2="330" y2="80" style="stroke:'+OS+';stroke-width:5"/><line x1="50" y1="150" x2="330" y2="150" style="stroke:'+OS+';stroke-width:5"/>';
+  g+=dot(30,98,d.m[0],0,'L')+dot(30,132,d.m[1],0,'U')+dot(350,98,d.m[2],0,'L')+dot(350,132,d.m[3],0,'U');
+  var P=[[90,46],[230,46],[90,184],[230,184]],B=[[30,50],[350,50],[30,188],[350,188]];
+  for(var c=0;c<4;c++){
+    var x=P[c][0],y=P[c][1],bd=!d.lock[c]&&!d.unl[c];
+    g+='<text x="'+B[c][0]+'" y="'+B[c][1]+'" text-anchor="middle" font-size="12" font-weight="600" style="fill:'+(bd?'var(--text-danger)':'var(--text-primary)')+'">C'+(c+1)+'</text>';
+    g+=dot(x,y,d.lock[c],bd,'L')+dot(x+30,y,d.unl[c],bd,'U')+dot(x+60,y,d.ld[c],!d.ld[c],'Ld');
+  }
+  g+=lab(92,119,'20ft',d.sz[0])+lab(150,119,'40ft in',d.sz[1])+lab(230,119,'40ft out',d.sz[2])+lab(294,119,'45ft',d.sz[3]);
+  document.getElementById('sv').innerHTML=g;
+}
+function render(){
+  var d=D[sc];
+  var st=document.getElementById('stat');
+  st.textContent=d.ok?'Spreader verrouillé, 40ft':'Défaut coin 3 (Cabside) : ni locked ni unlocked';
+  st.style.background=d.ok?'var(--bg-success)':'var(--bg-danger)';
+  st.style.color=d.ok?'var(--text-success)':'var(--text-danger)';
+  var v=[sum(d.lock),sum(d.unl),sum(d.ld)];
+  [1,2,3].forEach(function(k){
+    var e=document.getElementById('c'+k),bb=e.querySelector('b');
+    bb.textContent=v[k-1]+'/4';
+    var pa=(k!=2)&&v[k-1]<4;
+    e.style.background=pa?'var(--bg-danger)':'var(--surface-2)';
+    e.style.borderColor=pa?'var(--border-danger)':'var(--border)';
+    bb.style.color=pa?'var(--text-danger)':'var(--text-primary)';
+  });
+  draw(d);
+  document.getElementById('sig').innerHTML=d.sig.map(function(x,i){return pill(sg[i],x)}).join('')+'<div class="row" style="margin-top:6px"><span>40ft envoyé au RTG (SP5)</span>'+pill(d.ok?'Actif':'Inactif',d.ok,0)+'</div>';
+  var h='';
+  [[1,2],[3,4]].forEach(function(pr){
+    h+='<div class="sd">'+sd(pr[0])+'</div>';
+    pr.forEach(function(c){
+      var i=c-1;
+      h+='<div class="row"><span>Coin '+c+'</span><span>'+pill('Lock',d.lock[i],!d.lock[i]&&!d.unl[i])+pill('Unlock',d.unl[i],0)+pill('Landed',d.ld[i],!d.ld[i])+'</span></div>';
+    });
+  });
+  h+='<div class="sd">Left</div><div class="row"><span>M1 · M2</span><span>'+pill('Lock',d.m[0],0)+pill('Unlock',d.m[1],0)+'</span></div>';
+  h+='<div class="sd">Right</div><div class="row"><span>M3 · M4</span><span>'+pill('Lock',d.m[2],0)+pill('Unlock',d.m[3],0)+'</span></div>';
+  h+='<div class="sd">Taille</div><div class="row"><span>20ft · 45ft</span><span>'+pill('20ft',d.sz[0],0)+pill('45ft',d.sz[3],0)+'</span></div>';
+  h+='<div class="row"><span>40ft</span><span>'+pill('40ft in',d.sz[1],0)+pill('40ft out',d.sz[2],0)+'</span></div>';
+  document.getElementById('inp').innerHTML=h;
+  var ev=d.ok?[['14:30:12','Verrouillage 4/4 confirmé'],['14:29:55','Landed 4/4'],['14:28:40','Changement 20ft vers 40ft']]:
+  [['14:32:08','C3 (Cabside) : ni locked ni unlocked'],['14:32:07','C3 (Cabside) : landed perdu'],['14:30:12','Locked 3/4']];
+  document.getElementById('ev').innerHTML=ev.map(function(e,j){
+    return '<div class="row" style="font-size:12px;'+(j==0?'border-top:none;padding-top:0':'')+'"><span style="color:var(--text-secondary);white-space:nowrap">'+e[0]+'</span><span style="flex:1;text-align:right;'+((!d.ok&&j<2)?'color:var(--text-danger)':'')+'">'+e[1]+'</span></div>';
+  }).join('');
+  ['s0','s1'].forEach(function(id,i){document.getElementById(id).setAttribute('aria-pressed',sc==i?'true':'false')});
+}
+function setSc(i){sc=i;render()}
+render();
+</script>
+</body>
+</html>
